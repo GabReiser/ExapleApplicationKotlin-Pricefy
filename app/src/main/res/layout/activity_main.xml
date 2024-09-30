@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundoapp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/botao_celebracao_container"
+        android:layout_width="162dp"
+        android:layout_height="156dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/rounded_button"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/celebracao_imagem"
+            android:layout_width="281dp"
+            android:layout_height="101dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/fastfood" />
+
+        <TextView
+            android:id="@+id/celebracao_texto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="Celebração"
+            android:textColor="#000"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/botao_presente_container"
+        android:layout_width="162dp"
+        android:layout_height="156dp"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/rounded_button"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/botao_celebracao_container">
+
+        <!-- Imagem no botão -->
+
+        <!-- Texto no botão -->
+
+        <ImageView
+            android:id="@+id/presente_imagem"
+            android:layout_width="281dp"
+            android:layout_height="101dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/fastfood" />
+
+        <TextView
+            android:id="@+id/presente_texto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="Presente"
+            android:textColor="#000"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
